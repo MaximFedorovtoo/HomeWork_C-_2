@@ -10,7 +10,7 @@ int FindSecond(int var)
     var = int.Parse(Console.ReadLine());
     return var;
 }
-int number = 0;
-int second = FindSecond(number);
-second = second / 10 % 10;
-Console.WriteLine(second);
+int var = 0;
+int secondNumb = FindSecond(var);
+secondNumb = secondNumb / 10 % 10;
+Console.WriteLine(secondNumb);
