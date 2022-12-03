@@ -9,6 +9,11 @@ void WeekDay(int var)
     if(var == 6 || var == 7){Console.WriteLine("Да это выходной!");}
     else{Console.WriteLine("Нет это не выходной!");}
 }
-Console.WriteLine("Введите число обозначающее день недели, проверим является ли этот день выходным?");
-int numberDay = int.Parse(Console.ReadLine());
-WeekDay(numberDay);
+int NumbEnter (int var)
+{
+    Console.WriteLine("Введите число обозначающее день недели, проверим является ли этот день выходным?");
+    var = int.Parse(Console.ReadLine());
+    return var;
+}
+int numbDay = 0;
+WeekDay(NumbEnter(numbDay));

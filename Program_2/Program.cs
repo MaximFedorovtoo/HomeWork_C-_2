@@ -4,13 +4,25 @@
 //32679 -> 6
 
 Console.Clear();
-Console.WriteLine("Введите число чтобы узнать его третью цифру");
-int number = int.Parse(Console.ReadLine());
-if(number >=100 || number<=-100)
+int NumbEnter (int var)
 {
-    while (number > 1000|| number < -1000 ){number = number/10;}
-    int third_numb = number % 10;
-    if(third_numb < 0 ){ third_numb =  third_numb * -1; }
-    Console.WriteLine($"Третья цифра: {third_numb}");
+    Console.WriteLine("Введите число чтобы узнать его третью цифру");
+    var = int.Parse(Console.ReadLine());
+    return var;
 }
-else{Console.WriteLine("Третьей цифры нет");}
+void FindThird (int var)
+{
+    if(var >= 100 || var <= -100)
+    {
+        while (var > 1000|| var < -1000 ){var = var/10;}
+        int third_numb = var % 10;
+        if(third_numb < 0 ){ third_numb =  third_numb * -1; }
+        Console.WriteLine($"Третья цифра: {third_numb}");
+    }
+    else{Console.WriteLine("Третьей цифры нет");}
+}
+int var = 0;
+int number = NumbEnter(var);
+FindThird(number);
+
+

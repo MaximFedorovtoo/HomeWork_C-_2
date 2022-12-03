@@ -3,7 +3,14 @@
 //782 -> 8
 //918 -> 1
 
-Console.WriteLine("Введите трехзначное число чтобы узнать его вторую цифру");
-int number = int.Parse(Console.ReadLine());
-int second = number / 10 % 10;
+Console.Clear();
+int FindSecond(int var)
+{
+    Console.Write("Введите трехзначное число чтобы узнать его вторую цифру ");
+    var = int.Parse(Console.ReadLine());
+    return var;
+}
+int number = 0;
+int second = FindSecond(number);
+second = second / 10 % 10;
 Console.WriteLine(second);
