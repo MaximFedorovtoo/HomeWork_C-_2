@@ -15,5 +15,6 @@ int NumbEnter (int var)
     var = int.Parse(Console.ReadLine());
     return var;
 }
-int numbDay = 0;
-WeekDay(NumbEnter(numbDay));
+int var = 0;
+int numbDay = NumbEnter(var);
+WeekDay(numbDay);
